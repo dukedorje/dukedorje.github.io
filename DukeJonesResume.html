@@ -58,7 +58,7 @@
     <label>Summary:</label>
     <div>
       Specializing in the wise application of technology to achieve and increase the coherence of a vision.
-      Web application full-stack expert, from JS, through mid-stack logic, to ORM, to database, to infrastructure.  Architect of application software and distributed systems.  Extensive experience setting up and automating large-scale infrastructure on AWS.  Avid learner of new technologies and novel applications of existing ones.
+      Web application full-stack expert, from JS, through mid-stack logic, to ORM, to database, to infrastructure.  Architect of application software and distributed systems.  Avid learner of new technologies and novel applications of existing ones.
     </div>
     <label>Skills:</label>
     <div>
@@ -70,22 +70,21 @@
       <b>Senior Software Engineer</b>, March 2016 to May 2017<br>
       <b>Playstation Network</b>, San Francisco, CA
       <ul>
-        <li>Worked with a highly skilled team to design and implement a set of best practices, methods and microservices to sanely manage the tens of thousands of servers currently in the Playstation Network.</li>
-        <li>Transitioned existing applications and infrastructure into intelligent deployment pipelines with GoCD.  This automatically runs Packer to build AMIs, passing on to Terraform to create all the infrastructure necessary for fast image-based autoscaling groups.</li>
-        <li>Developed the use of Consul for DNS-based service discovery and as a distributed key-value store for easily updating configuration information without a complete rebuild.</li>
-        <li>Improved and maintained the large in-house Rails application for infrastructure automation.</li>
-        <li>Created a set of microservices to respond instantly to AWS events and feed a dashboard to give our Tier 2 team actionable data in realtime.</li>
+        <li>Worked on automating creation and scaling of the over 40,000 servers currently in the Playstation Network.</li>
+        <li>Improved and maintained the large Rails-based in-house infrastructure automation application.</li>
+        <li>Working with other senior engineers to develop Sony's new deployment strategy utilizing Terraform, intelligent deployment pipelines with GoCD, AMI building with Packer to create image-based autoscaling groups.</li>
+        <li>Developing the use of Consul as a distributed key-value store for easily updating configuration information without a complete Chef/Terraform rebuild.</li>
+        <li>Creating a set of microservices to respond to AWS events in real time, and feed a dashboard to give our Tier 2 team a birds-eye view of the current state of the network.</li>
       </ul>
     </div>
     <div>
       <b>Senior Software Engineer</b>, April 2015 to March 2016<br>
       <b>Citizen Code Innovation Studio</b>, Berkeley, CA
       <ul>
-        <li>As part of a major credit card company's innovation budget, co-architected and wrote software using Node.js to dynamically form a legal association and distribute bitcoin blockchain-based cryptocurrency meta-tokens representing an equity allocation / profit distribution rights in the association.</li>
-        <li>Transitioned this to an Ethereum smart contract to implement automated income distribution to token holders.</li>
+        <li>As part of a major credit card company's innovation budget, co-architected and wrote a Slack chat-based bot in Node.js to dynamically form a legal association and distribute bitcoin blockchain-based cryptocurrency meta-tokens representing an equity allocation / profit distribution rights in the association.  Set up Ethereum and began writing smart contracts to implement automated income distribution to token holders.  We used Firebase for state.</li>
         <li>Prototyped on behalf of one of the inventors of SSL a concept for revocable self-signed certificates utilizing metadata in Bitcoin transactions to verify authenticity and viability of a self-signed certificate.</li>
         <li>Took part in a conference, "Rebooting the Web of Trust", to co-author a whitepaper on implementing a modern-day web-of-trust for PGP's 25th anniversary.</li>
-        <li>Wrote a Rails-based automobile fleet management application; interfaced with Edmunds and Kelly Bluebook APIs.  Wrote a subscription-based social network web application in Rails.</li>
+        <li>Wrote an automobile fleet management application, interfaced with Edmunds and Kelly Bluebook APIs using Rails.  Wrote a subscription-based social network web application in Rails.</li>
       </ul>
     </div>
     <div>
@@ -93,40 +92,44 @@
       <b>Amazon.com, Inc.</b>, San Francisco, CA
       <ul>
         <li>Developing the distributed systems and services for Amazon Local Commerce, Amazon's point-of-sale solution.</li>
-        <li>Worked on writing the Liability Management System, a Java Amazon service to control transferring of moneys to users' bank accounts.  Wrote a component which enabled us to receive credit card data with the newer Coral API protocol, interfacing directly with Amazon's older HTTP-based firewall-level credit card encryption service.</li>
-        <li>Worked on other components of the distributed job queuing system, which sent job data onto SQS, and broadcasted via SNS to the set of app servers to execute.</li>
+        <li>Worked on writing the Liability Management System, a Java Amazon Coral service to control transferring of moneys to users' bank accounts.  Successfully enabled us to use the newer Coral API protocol by writing a component that interfaced with Amazon's older HTTP-based firewall-level encryption service, since Amazon's newer Coral-based encryption service was not yet ready for production applications. Also worked on other components which sent job execution data onto SQS (simple queue service), and broadcast via SNS (push notification service) to the bank of servers to execute further processes.</li>
         <li>In order to comply with internal security requirements, wrote AWS security rules for EMR access to DynamoDB, automated Hadoop analytics cluster spin up and assignment of whitelisted elastic IP addresses.</li>
+        <li>Helped the web team speed their development iteration from ~10 minutes compilation time per change, to immediately seeing changes by developing a package based on the Rails asset pipeline that served the assets dynamically in development and compiled and minified the assets in production.</li>
         <li>Helped write EMR (Elastic MapReduce) code to pre-calculate and aggregate user sales data and other analytics from DynamoDB.</li>
       </ul>
     </div>
     <div>
-      <b>Senior Software Engineer, Technical Lead</b>, October 2012 to December 2013<br>
+      <b>Senior Software Engineer, Team Lead</b>, October 2012 to December 2013<br>
       <b>GoPago, Inc.</b>, San Francisco, CA
       <ul>
         <li>One of two senior technical leads building out the backend systems and merchant-facing web application of a point-of-sale solution.</li>
-        <li>Successfully led a team effort to wrap a large legacy codebase in 100% tests with Red/Green continuous integration monitor always visible to the engineering team.  This enabled us to refactor and improve the application, leading to substantially fewer bugs.</li>
-        <li>We were able to foster an environment of greater mentorship and code quality by helping implement a code-review system where myself and the other senior dev reviewed all of the code via Pull Requests.</li>
-        <li>Doubled the throughput of our transaction ingestion stream from our Java-based transaction processing server by optimizing the table structure and utilizing actor-based concurrency. This addressed Amazon's last remaining issue with us, allowed us to pass their stress test, and clinched the acquisition of the company.</li>
-        <li>Rewrote the code calculating transaction fees and depositing money into customers' bank accounts.</li>
-        <li>Architected and wrote the Backbone.js / Coffeescript application for our merchants to access and update their menus and PoS products, and the merchant analytics reporting application.  Transitioned backend templates to haml-coffee, and worked on the RESTful JSON API endpoints for the application to synchronize its state.</li>
-        <li>Wrote API endpoints for the mobile Android-based PoS system.</li>
+        <li>Successfully with the other senior engineer wrapped a legacy codebase in 100% tests with Red/Green continuous integration monitor always visible to the engineering team.  This enabled us to refactor and improve the application, leading to substantially fewer bugs.</li>
+        <li>We were able to foster an environment of greater mentorship and code quality by helping implement a code-review system where myself and the other senior dev reviewed all of the code submitted by more junior engineers, and each other's code.</li>
+        <li>Doubled the throughput of our transaction ingestion stream from our Java-based transaction processing server by optimizing the table structure and utilizing actor-based concurrency. This addressed Amazon's last remaining issue with us, allowed us to pass the stress test, and clinched the acquisition of the company.</li>
+        <li>Eliminated angry customer phone calls by rewriting the software that calculates transaction fees and deposits money into customers' bank accounts.</li>
+        <li>Architected and wrote the Backbone.js / Coffeescript application for our merchant-facing web applications, including the merchant analytics reporting portal.  Transitioned backend templates to haml-coffee, and wrote the RESTful JSON API endpoints for the application to synchronize its state.  </li>
+        <li>Wrote APIs to interact with the mobile POS system.</li>
+        <li>Saved the company thousands in processing fees by writing API clients to interface our system with multiple financial processing systems, including Stripe, Braintree, and Paymentech.</li>
         <li>Used cucumber to automate regression testing across multiple browsers including Internet Explorer in a Virtualbox.</li>
+        <li>Technologies used include Ruby on Rails, Coffeescript, MySQL, Redis, BackboneJS, Memcache.</li>
       </ul>
     </div>
     <div>
       <b>Software Architect, Team Lead</b>, October 2010 to November 2011<br>
       <b>Dreamcatcher</b>, Berkeley, CA
       <ul>
-        <li>Came on as technical lead to transition an early-stage dream sharing social network from a PHP proof-of-concept to a Rails application.</li>
-        <li>Trained a team of junior designers and programmers in using a modern web application stack of tools, methodologies, and frameworks.</li>
+        <li>Came on as technical lead to transition an early-stage dream sharing social network from a PHP proof-of-concept to a Rails application based on the latest web application technologies.</li>
+        <li>Trained a team of junior designers and programmers in using the modern state-of-the-art tools and methodologies in web application development, including git for distributed source control management, basic command-line usage, and setting up a local Rails development environment for efficient development.</li>
         <li>Wrote the backend of the application. Designed the DB schema, wrote the model logic.</li>
-        <li>Ensuring code quality in all parts of the application.</li>
+        <li>Overseeing and maintaining overall code quality in all parts of the application.</li>
+        <li>Planned implementations of requirements. Trained and mentored team members in accomplishing the requirements.</li>
+        <li>Automated, one-command, multi-stage deployment using Capistrano, to both Staging and Production instances.</li>
         <li>Wrote a system for identifying keywords and concepts in a dream, and then generating a weighted tag-cloud for it.  One could traverse the tag cloud to find other dreams about similar topics.</li>
         <li>Wrote a DSL to interface with ImageMagick to dynamically resize uploaded images according to the exact specifications of our user interface artist.</li>
         <li>Dramatically reduced page load time by implementing HTTP streaming (nginx and unicorn), embedding small icons in a separate stylesheet data-uri encoded, and aggressively caching expensive template renders in memcache.  Cache expiry was accomplished by naming the keys with the name and id of the major model objects necessary to render a template, and their updated_at timestamp.</li>
+        <li>Technologies used include Ruby On Rails, MySQL, Nginx, Unicorn, CoffeeScript, Git, Haml, Sass, HTML 5.</li>
       </ul>
     </div>
-    <!--
     <div>
       <b>Software Engineer</b>, November 2009 to August 2010<br>
       <b>Crowdcast, Inc.</b>, San Francisco, CA
@@ -140,7 +143,6 @@
         <li>Acquired by Spigit in September 2012.</li>
       </ul>
     </div>
-    -->
     <div>
       <b>Software Engineer</b>, January 2008 to August 2009<br>
       <b>PGP Corporation</b>, Menlo Park, CA
@@ -150,16 +152,15 @@
         <li>Secure downloading of products, according to government regulation of strong encryption.</li>
         <li>Implementing the ability to manage complex multi-site configurations with PGP's server products.</li>
         <li>User interface design: writing Javascript, making Ajax calls, some graphic design.</li>
-        <li>Updating and refactoring of complex model/database code; working with Oracle.</li>
+        <li>Updating and refactoring of very complex model/database code; working with Oracle.</li>
         <li>Tying together various corporate subsystems via web services: receiving information from SAP, synchronizing Contacts with the RightNow support system and Comergent web store, both directly and via custom CastIron XML-API's and REST-based interfaces.</li>
         <li>Converted legacy Java WebObjects backend to ActiveRecord.</li>
-        <li>Converted from a JRuby setup to Ruby, Apache, and Passenger. Implemented secure automated deployment via Capistrano.</li>
+        <li>Converted from a crash-prone JRuby setup to Ruby, Apache, and Passenger. Implemented secure automated deployment via Capistrano.</li>
         <li>Proselytized and migrated the source control system from Perforce to Git.</li>
         <li>Configured continuous integration environment using Hudson. Synchronized this with Git and JIRA.</li>
         <li>Acquired by Symantec in June 2010.</li>
       </ul>
     </div>
-    <!--
     <div>
       <b>Software Engineer</b>, December 2006 to December 2007<br>
       <b>Ecast, Inc.</b>, San Francisco, CA
@@ -173,6 +174,7 @@
         <li>Continuous Integration via CruiseControl.NET.</li>
       </ul>
     </div>
+<!--
     <div>
       <b>Web Application Developer</b>, July 2005 to November 2005<br>
       <b>Ordinary Kids</b>, San Francisco, CA
@@ -192,7 +194,7 @@
         <li>Design work with Dreamweaver and Photoshop.</li>
       </ul>
     </div>
-    -->
+-->
     <label>Education:</label>
     <div>
       <b>Bachelor's Degree</b> in Computer Science, May 2003<br>
@@ -211,11 +213,11 @@
     </div> -->
     <label>Interests:</label>
     <div class="interests">
-      Machine learning, go, elixir, scalable distributed system architecture, internal martial arts, encryption, agile coding, hatha yoga, classical Indian sitar, electronics, making things, snowboarding, automated fabrication, clean readable code.
+      Machine learning, parallel / concurrent programming, functional programming, react, go, elixir, scalable distributed system architecture, internal martial arts, encryption, agile coding, hatha yoga, sitar, emerging technology, electronics, making things, snowboarding, automated fabrication, clean readable code.
     </div>
 
 <!--
-    UNLESS I TELL YOU IT'S OK DO NOT CALL MY REFERENCES.
+    DO NOT CALL MY REFERENCES UNLESS I TELL YOU IT'S OK.
     <label>References:</label>
     <div>
       Geoff Jensen<br>
